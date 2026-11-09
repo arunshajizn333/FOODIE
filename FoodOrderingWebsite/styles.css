@@ -1,0 +1,36 @@
+/* ===================================================
+   FOODIE - MASTER STYLESHEET
+   Modular CSS Architecture
+   =================================================== */
+
+/* Establish CSS layer order — utilities beats base,
+   so Tailwind utilities override the * reset in global.css */
+@layer theme, base, components, utilities;
+
+/* 1. Global design tokens, resets, navbar, footer */
+@import url("./src/styles/global.css");
+
+/* 2. Shimmer & skeleton loading states */
+@import url("./src/styles/shimmers.css");
+
+/* 3. Home page (Hero, Categories, Popular Restaurants, Promo Banner) */
+@import url("./src/styles/home.css");
+
+/* 4. Restaurant Menu page */
+@import url("./src/styles/restaurantMenu.css");
+
+/* 5. About page (now using Tailwind CSS) */
+/* @import url("./src/styles/about.css"); */
+
+/* 6. Contact page */
+@import url("./src/styles/contact.css");
+
+/* 7. other pages */
+@import url("./src/styles/others.css");
+
+/* 8. Cart page */
+@import url("./src/styles/cart.css");
+
+/* 9. TAILWIND CSS — must come after @import url() rules
+   (CSS spec: @import must precede all rules except @charset and @layer) */
+@import "tailwindcss";

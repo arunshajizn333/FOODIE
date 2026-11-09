@@ -1,0 +1,95 @@
+# Food Ordering Website
+
+This project is a React learning app that demonstrates how to build a food ordering website using modern React concepts. It focuses on understanding the fundamentals of React while creating a practical, interactive UI.
+
+## Overview
+
+The app is inspired by food delivery platforms and showcases restaurant listings, food cards, and menu-based browsing. It is designed as a learning project to practice:
+
+- React component design
+- JSX and rendering
+- Props and state management
+- React hooks
+- API fetching and data rendering
+- Conditional rendering and UI updates
+- Component lifecycle concepts
+- Routing basics and app structure
+- Learned how to create custom hooks for data fetching and state management
+
+
+## Features
+
+- Restaurant listing cards
+- Food item display with details
+- Dynamic UI rendering from data
+- State-driven interactions
+- API integration for live restaurant data
+- Responsive styling for a cleaner user experience
+
+## Tech Stack
+
+- React
+- Parcel
+- React Router
+- CSS
+
+## Learning Goals
+
+This project was built to learn and understand:
+
+- How React works under the hood
+- JSX and functional components
+- Props, state, and hooks
+- Reconciliation and the Virtual DOM
+- Performance concepts in rendering
+- Event handling in React
+- Class components and lifecycle methods
+- Fetching paginated restaurant data from APIs
+- Future topics such as Redux, routing, testing, and performance optimization
+
+## API Notes
+
+The app uses Swiggy-style restaurant listing APIs with paginated responses. A typical flow is:
+
+- Initial request to fetch restaurant data
+- Response includes pagination metadata such as `nextOffset` and `widgetOffset`
+- Next request uses the offset to fetch the next batch of restaurants
+
+This pattern helps load data in smaller chunks instead of fetching everything at once.
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm start
+   ```
+
+3. Open the app in the browser:
+   ```bash
+   http://localhost:1234
+   ```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Project Status
+
+This is a learning-focused project aimed at building a strong foundation in React. It is not intended to be a production-ready food delivery app yet, but it provides a practical learning path for understanding React architecture and UI development.
+
+## Future Roadmap
+
+- Complete React project architecture from scratch
+- Learn React Router for multi-page applications
+- Explore Redux for global state management
+- Add unit testing for React components
+- Improve performance optimization techniques
+- Learn Tailwind CSS and Material UI for modern styling
+
